@@ -1,0 +1,11 @@
+module rom(input logic [31:0] pc_present,en, clk,reset,output logic [31:0] data);
+logic [31:0] rom[0:511];
+always@(posedge en, posedge clk)
+begin
+rom[0] = 32'h11;
+rom[4] = 32'h10;
+rom[8] = 32'h00;
+rom[12] = 32'h01;
+end
+assign data = rom[pc_present];
+endmodule
