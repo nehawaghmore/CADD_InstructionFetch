@@ -1,0 +1,7 @@
+module instfetch(input logic pc,s,en, reset,clk,output logic out1);
+output logic x;
+adder (b,y);
+mux21 (y,pc,s,x);
+pc (x,reset,clk,b);
+rom (b,en,clk,reset,out1);
+endmodule
