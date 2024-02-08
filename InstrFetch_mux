@@ -1,0 +1,3 @@
+module mux21(input logic A,input logic B,input logic S0,output logic Z );
+assign Z = S0 ? A : B;
+endmodule
