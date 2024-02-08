@@ -11,3 +11,4 @@ end
 // Provide the current PC value as an output
 assign pc_out = pc;
 endmodule
+
